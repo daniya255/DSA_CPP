@@ -15,7 +15,7 @@ void set_zeroes(vector<vector<int>>&matrix){
                     if(matrix[i][col]!=0) matrix[i][col]=-1;
                 }
                 //set the entire row to -1
-                for(int row=0;row<m;row++){
+                for(int row=0;row<n;row++){
                     if(matrix[row][j]!=0) matrix[row][j]=-1;
                 }
             }
