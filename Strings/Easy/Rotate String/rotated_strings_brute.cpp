@@ -32,8 +32,7 @@
 
       string s = "rotation";
       string goal = "tionrota";
-      
-      // Check if strings are isomorphic
+
       if (rotateString(s, goal)) {
           cout << "true." << endl;
       } else {
