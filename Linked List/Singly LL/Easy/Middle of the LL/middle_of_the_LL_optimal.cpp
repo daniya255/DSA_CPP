@@ -55,7 +55,7 @@ Node* convertArr2LL(vector<int>arr){
 Node* middleNode(Node* head) {
     // If the list is empty or has only
     // one element, return the head asit's the middle.
-    if(head==nullptr && head->next==nullptr)   return head;
+    if(head==nullptr || head->next==nullptr)   return head;
 
     Node* slow=head;
     Node* fast=head;
