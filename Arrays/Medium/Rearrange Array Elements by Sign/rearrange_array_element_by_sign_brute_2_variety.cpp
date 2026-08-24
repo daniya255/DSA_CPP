@@ -9,27 +9,25 @@ vector<int>rearrange_array(vector<int>&nums){
         else neg.push_back(nums[i]);
     }
 
-    if(pos.size()>neg.size()){
-        for(int i=0;i<neg.size();i++){
-            nums[2*i]=pos[i];
-            nums[2*i+1]=neg[i];
-        }
-       int  index=neg.size()*2;
-        for(int i=neg.size();i<pos.size();i++){
-            nums[index]=pos[i];
-        }
+    int pSize = pos.size();
+    int nSize = neg.size();
+    int i = 0, j = 0, k = 0;
+
+    // as long as both have elements
+    while(i < pSize && j < nSize) {
+        nums[k++] = pos[i++];
+        nums[k++] = neg[j++];
     }
-    else{
-        for(int i=0;i<pos.size();i++){
-            nums[2*i]=pos[i];
-            nums[2*i+1]=neg[i];
-        }
-       int  index=pos.size()*2;
-        for(int i=pos.size();i<neg.size();i++){
-            nums[index]=neg[i];
-        }
+
+    // Append leftover positives, if any
+    while(i < pSize) {
+        nums[k++] = pos[i++];
     }
-   
+
+    // Append leftover negatives, if any
+    while(j < nSize) {
+        nums[k++] = neg[j++];
+    }
 
     return nums;
 }
