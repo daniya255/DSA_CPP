@@ -1,6 +1,6 @@
 # 🚀 Data Structures & Algorithms in C++
 
-Welcome to my **DSA in C++** repository! This repository serves as a comprehensive collection of data structures, algorithms, and problem-solving patterns implemented in modern C++. Whether you're preparing for technical interviews, brushing up on computer science fundamentals, or exploring efficient problem-solving techniques, you'll find structured resources here.
+Welcome to my **DSA in C++** repository! This repository serves as a comprehensive collection of data structures, algorithms, and problem-solving patterns implemented in modern C++. 
 
 ---
 
@@ -35,8 +35,8 @@ If you want to run or test any of the files locally, follow these simple steps:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/daniya255/DSA_CPP.git
+cd DSA_CPP
 ```
 
 ### 2. Compile and Run a file
