@@ -1,0 +1,20 @@
+Greedy Algorithm solve optimization problems by making the best local choice at each step in the hope of finding the global optimum. It's like taking the best option available at each moment, hoping it will lead to the best overall outcome.
+
+Here's how it works:
+
+1.Start with the initial state of the problem.
+2.Consider all the options available at that specific moment.
+3.Choose the option that seems best at that moment, regardless of future consequences. This is the "greedy" part - you take the best option available now, even if it might not be the best in the long run.
+4.Move to the new state based on your chosen option. This becomes your new starting point for the next iteration.
+
+Repeat steps 2-4 until you reach the goal state or no further progress is possible.
+
+Example:
+Let's say you have a set of coins with values [1, 2, 5, 10] and you need to give minimum number of coin to someone change for 39.
+
+The greedy algorithm would repeat the following steps 1 and 2 until the amount to be changed becomes 0.
+
+Step-1: Start with the largest coin value that is less than or equal to the amount to be changed. In this case, the largest coin less than or equal to 39 is 10.
+Step- 2: Subtract the largest coin value from the amount to be changed, and add the coin to the solution. In this case, subtracting 10 from 39 gives 29, and we add one 10-coin to the solution.
+Step-3 : We repeat picking 10 until the amount is less than it , so after picking 10 three times amount now is 9.
+Step-4 : Now we pick the largest coin less than or equals to 9 and keep repeating the above steps.
